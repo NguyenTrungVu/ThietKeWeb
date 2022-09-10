@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cs/css_info.css" rel="stylesheet">
+    <link href="cs/header.css" rel="stylesheet">
+    <link href="cs/menu-res.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/footer-res.js"></script>
+
+    <link rel="stylesheet" href="cs/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        wow = new WOW(
+                      {
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+    
+    <link href="images/1.png" rel="shorcut icon">
+    <title>Info</title>
+</head>
+<body>
+    <header class="tong" style="background-color:#ff0000;">
+        <div class="all" style="background-color:#ff0000; border-bottom: 0;">
+            <div class="logo ">
+                <a href="bigExam.html"><img src="images/logo.png" alt="logo" width="37" height="32" ></a> 
+            </div>
+            <div class="ndsearch">
+                <form class="f-search">
+                    <div class="cb-area">
+                        <button type="button">Hồ Chí Minh</button>
+                        <div class="cb-areasub">
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hà Nội</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hồ Chí Minh</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Đà Nẵng</a>
+                        </div>
+                    </div>
+                    <div class="ex_search">
+                        <input type="text" class="ex_stext" placeholder="Bạn cần tìm gì ..." id="ex_stext">
+                        <button id="ex_sbm">
+                            <svg width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu"> 
+                <ul class="nd-menu media">
+                    <li  class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                            <div class="dropdown-content">
+                                <a href="#" >Iphone</a>
+                                <a href="#" >SamSung</a>
+                                <a href="#" >Huawei</a>
+                                <a href="#" >Readme</a>
+                                <a href="#" >Vsmart</a>
+                                <a href="#" >Vivo</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                            <div class="dropdown-content">
+                                <a href="#" >Huawei Tab</a>
+                                <a href="#" >SamSung Tab</a>
+                                <a href="#" >Ipad Air</a>
+                                <a href="#" >Ipad Pro</a>
+                                <a href="#" >Ipad Mini</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                            <div class="dropdown-content">
+                                <a href="#" >Tai nghe</a>
+                                <a href="#" >Cáp, sạc</a>
+                                <a href="#" >Pin dự phòng</a>
+                                <a href="#" >Dán màn hình</a>
+                                <a href="#" >Ốp lưng</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                            <div class="dropdown-content">
+                                <a href="#" >Ép kính</a>
+                                <a href="#" >Chân sạc</a>
+                                <a href="#" >Thay pin</a>
+                                <a href="#" >Thay màn hình</a>
+                                <a href="#" >Thay vỏ</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+                    <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+                </ul>
+            </div>
+            <!--<div class="menu-icon">
+                <a><i class="fas fa-bars"></i></a>
+                <a><i class="fas fa-times"></i></a>
+            </div>-->
+
+        </div>
+        <!-- mày bỏ cái này vào phần  css header nhen
+
+            <ul class="nd-menu secondmenu">
+            <li  class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                    <div class="dropdown-content pos">
+                        <a href="#" >iPhone</a>
+                        <a href="#" >SamSung</a>
+                        <a href="#" >Huawei</a>
+                        <a href="#" >Readme</a>
+                        <a href="#" >Vsmart</a>
+                        <a href="#" >Vivo</a>
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                    <div class="dropdown-content pos">
+                        <a href="#" >Huawei Tab</a>
+                        <a href="#" >SamSung Tab</a>
+                        <a href="#" >Ipad Air</a>
+                        <a href="#" >Ipad Pro</a>
+                        <a href="#" >Ipad Mini</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                    <div class="dropdown-content pos">
+                        <a href="#" >Tai nghe</a>
+                        <a href="#" >Cáp, sạc</a>
+                        <a href="#" >Pin dự phòng</a>
+                        <a href="#" >Dán màn hình</a>
+                        <a href="#" >Ốp lưng</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                    <div class="dropdown-content pos">
+                        <a href="#" >Ép kính</a>
+                        <a href="#" >Chân sạc</a>
+                        <a href="#" >Thay pin</a>
+                        <a href="#" >Thay màn hình</a>
+                        <a href="#" >Thay vỏ</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+            <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+        </ul>-->
+
+
+        
+
+
+    </header>
+
+
+    <setion class="share">
+        <ul class="share-link">
+            <li><a href="#" class="medias"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#" class="medias"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="medias"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#" id="topId" class="medias"><i class="fas fa-angle-up"></i></a></li>
+        </ul>
+    </setion>
+
+
+
+
+    <section class="tong">
+        <div class="all">
+            <div class="top_view">
+                <h1>Samsung Galaxy Note 20 Ultra 5G</h1>
+                <span>
+                    <i style="padding: 0; margin-right: 15px;cursor: pointer;" idx=1 class="far fa-star"></i>
+                    <i style="padding: 0; margin-right: 15px;cursor: pointer;" idx=2 class="far fa-star"></i>
+                    <i style="padding: 0; margin-right: 15px;cursor: pointer;" idx=3 class="far fa-star"></i>
+                    <i style="padding: 0; margin-right: 15px;cursor: pointer;" idx=4 class="far fa-star"></i>
+                    <i style="padding: 0; margin-right: 15px;cursor: pointer;" idx=5 class="far fa-star"></i>
+                    <a href="#danhgia">1 đánh giá</a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="tong wow bounceInDown" data-wow-delay="0.1s">
+        <div class="all">
+            <div class="col35">
+                <div class="san-pham"><img src="images/ultra_1.jpg"></div>
+                <div class="minh-hoa">
+                    <div class="minh-hoas"><img src="images/ultra_1.jpg" alt="Vàng-Đồng"></div>
+                    <div class="minh-hoas"><img src="images/ultra_3.jpg" alt="Đen"></div>
+                    <div class="minh-hoas"><img src="images/ultra_2.jpg" alt="Trắng"></div>
+                    <div class="minh-hoas"><img src="images/ultra_4.jpg" alt="Xanh-Rêu"></div>
+                </div>
+            </div>
+            <div class="col35" style="background-color: rgba(238,238,238,.25)">
+                <div class="chi-nhanh">
+                    <strong>Mua hàng từ:</strong>
+                    <div class="select">
+                        <select>
+                            <option>Kon Tum</option>
+                            <option>Bình Định</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="price">
+                    <div class="prices">
+                        <span class="ban">32.990.000 ₫</span>
+                        <p>Giá niêm yết:<span class="goc">33.490.000 ₫</span></p>
+                        
+                    </div>
+                    <div class="tra-gop">Trả góp 0%</div>
+                </div>
+                <div class="phien-ban">
+                    <div data="ultra">
+                        <span>Note 20 Ultra 5G</span>
+                        <strong>32.990.000 ₫</strong>
+                    </div>
+                    <div data="ultra">
+                        <span>Note 20 Ultra</span>
+                        <strong>29.990.000 ₫</strong>
+                    </div>
+                    <div data="20">
+                        <span>Note 20 </span>
+                        <strong>21.990.000 ₫</strong>
+                    </div>
+                </div>
+                <div class="button">
+                    <b>Màu sắc:</b>
+                    <i data="ultra_1" style="background-color:#a88279"></i>
+                    <i data="ultra_3" style="background-color:#f1f0ee"></i>
+                    <i data="ultra_2" style="background-color:#1f1f1f"></i>
+                    <i data="ultra_4" style="background-color:#84a18f"></i>
+                </div>
+
+                <div class="note"> 
+                    <strong>Liên hệ Hotline để nhận giá tốt nhất</strong>
+                    <a href="#">0720027611</a>.
+                 </div>
+                <div class="khuyen-mais">
+                    
+                        <p>Khuyến mãi</p>
+                        <div class="khuyen-mai">
+                            <h4>Chương trình khuyến mại:</h4>
+                            <ul>
+                                <li><a href="#">[HOT] Thu cũ lên đời Note 2020 - Trợ giá 2.5 triệu (có điều kiện kèm theo)</a></li>
+                            </ul>
+                            <h4>Trả góp 0%:</h4>
+                            <ul>
+                                <li><a href="#">Trả góp lãi suất 0% với Home Credit. Trả trước 30%, kỳ hạn 6 tháng (Áp dụng cùng các khuyến mại khác)</a></li>
+                                <li><a href="#">Trả góp 0% với FE Credit - trả trước từ 30% (áp dụng cùng các khuyến mãi khác)</a></li>
+                            </ul>
+                            <h4>Khuyến mãi hãng:</h4>
+                            <ul>
+                                <li><a href="#">[HOT] Ưu đãi giảm giá 3 triệu khi thanh toán qua thẻ ngân hàng</a></li>
+                            </ul>
+
+                    </div>
+                </div>
+
+                <div class="thanh-toan">
+                    <p>
+                        <strong>Thanh toán online</strong> |
+                        <span> Miễn phí giao hàng thu tiền</span>
+                    </p>
+                    <a href="muaHang.html">
+                        <strong>MUA NGAY</strong>
+                        <br>
+                        (Giao hàng tận nơi - Giá tốt - An toàn)
+                    </a>
+                    <div class="ht-thanhtoan">
+                        <a href="tra-gop.html" class="col50">
+                            <strong>TRẢ GÓP 0%</strong>
+                            <br>
+                            (Xét duyệt qua điện thoại)
+                        </a>
+                        <a href="#" class="col50">
+                            <strong>TRẢ GÓP QUA THẺ</strong>
+                            <br>
+                            (Visa, Master, JCB)
+                        </a>
+                    </div>
+                    <div class="tu-van">
+                        <a href="#" target="_blank">Trả góp 0% với thẻ tín dụng tại cửa hàng - Xem chi tiết </a>
+                        <br>
+                        Gọi miễn phí: 
+                        <b>1800.2097</b> | <a href="#">Chat với tư vấn viên</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col30" style="background-color: rgba(238,238,238,.25)">
+                <div class="right">
+                    <strong id="cua-hang">Hiện 14 cửa hàng có sẵn sản phẩm</strong>
+                    <strong>Cửa hàng còn hàng (Bấm xem dẫn đường):</strong>
+                </div>
+                <div class="dia-chi">
+                    <select id="district">
+                        <option>Quận/Huyện</option>
+                        <option> Quận 1</option>
+                        <option> Quận 2</option>
+                        <option>Quận 3</option>
+                        <option>Quận 4</option>
+                        <option>Quận 5</option> 
+                        <option> Quận 6</option>
+                        <option> Quận 7</option>
+                        <option> Quận 8</option>
+                        <option>Quận 9</option>
+                        <option>Quận 10</option>
+                        <option>Quận 11</option>
+                        <option>Quận 12</option> 
+                        <option> Quận Bình Thạnh</option>
+                        <option> Huyện Bình Chánh</option>
+                        <option> Quận Bình Tân</option>
+                        <option>Huyện Củ Chi</option>
+                        <option>Huyện Hóc Môn</option>
+                        <option>Huyện Nhà Bè</option>   
+                        <option>Quận Phú Nhuận</option>
+                        <option>Huyện Cần Giờ</option>
+                        <option>Quận Tân Bình</option>
+                        <option>Quận Tân Phú</option>
+                        <option>Quận Thủ Đức</option>                
+                    </select>
+                    <ul class="danh-sach-ch">
+                        <li>157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</li>
+                        <li>136 Nguyễn Thái Học, P. Phạm Ngũ Lão, Q. 1</li>
+                        <li>55B Trần Quang Khải, P. Tân Định, Q. 1</li>
+                        <li>132 Nguyễn Thái Học, P. Phạm Ngũ Lão, Q. 1</li>
+                        <li>363 Võ Văn Tần, P. 5, Q. 3</li>
+                        <li>177 Khánh Hội, P. 3, Q. 4</li>
+                        <li>1075B Hậu Giang, P. 11, Q. 6</li>
+                        <li>248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</li>
+                    </ul>
+                <div class="bao-hanh">
+                    <b>Tình trạng</b><br>
+                    <span>Máy mới 100% , chính hãng Apple Việt Nam.<br>NamVux hiện là đại lý bán lẻ uỷ quyền iPhone chính hãng VN/A của Apple Việt Nam</span>
+                </div>
+                </div>
+                <div class="bao-hanh">
+                    <b>Hộp bao gồm</b><br>
+                    <span>- Máy<br>- Sạc USB-C 18W<br>-  Cáp USB-C to Lightning<br>- Tai nghe<br>- Que lấy SIM, sách hướng dẫn</span>
+                </div>
+                <div class="bao-hanh">
+                    <b>Bảo hành</b>
+                    <br>
+                    <span>Bảo hành chính hãng 12 tháng tại trung tâm bảo hành của Apple Việt Nam. Đổi mới trong 30 ngày tại NamVux nếu có lỗi nhà sản xuất</span><a href="bao-hanh.html" style="color:red">(Chi tiết)</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="tong" style="margin-top: 10px;">
+        <div class="all"> 
+            <div class="col70">
+                <div class="mo-ta wow bounceInDown" data-wow-delay="0.2s">
+                    <h2>Samsung Note 20 Ultra 5G - Sang trọng, hiệu năng vượt trội</h2>
+                    <p>Bên cạnh biên bản <a href="#">Note 20</a> thường, Samsung còn cho ra mắt <strong>Note 20 Ultra 5G</strong> cho khả năng kết nối dữ liệu cao cùng thiết kế nguyên khối sang trọng, bắt mắt. Đây sẽ là sự lựa chọn hoàn hảo dành cho bạn để sử dụng mà không bị lỗi thời sau thời gian dài ra mắt.</p>
+                    <h3>Thiết kế khung nhôm nguyên khối, mặt sau kính cường lực sang trọng</h3>
+                    <p>Là một sản phẩm có kích thước màn hình lớn vì vậy Samsung đã trang bị cho <strong>Galaxy Note 20 Ultra</strong> 5G  với công nghệ kết nối dữ liệu mạnh mẽ cùng thiết kế nguyên khối. Giúp các linh kiện bên trong điện thoại được cố định chắc chắn đảm bảo mọi thứ bên trong luôn được an toàn. Không những vậy khung nhôm tạo trên những đường viền cực kỳ sang trọng và bắt mắt khi nhìn vào.</p>
+                    <div class="anh">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G.jpg" alt="phone">
+                    </div>
+                    <p>Mặt sau của <strong>SS Galaxy Note</strong> này được hãng trang bị mặt kính tạo nên vẻ sang trọng và cuốn hút khi nhìn vào chiếc điện thoại từ bên ngoài. Loại kính cho cả mặt trước và mặt sau đều là kính cường lực Gorilla Glass 6 không những sang trọng mà còn mang đến sự chắc chắn hạn chế rơi vỡ vực tốt.</p>
+                    <h3>Màn hình 6.9 inch độ phân giải 2K 120Hz, cấu hình mạnh mẽ</h3>
+                    <p>Đối với bất kỳ chiếc điện thoại nào đến từ Samsung dòng Note luôn là những chiếc điện thoại có kích thước màn hình lớn. Samsung Galaxy Note 20 Ultra 5G cũng vậy nó được trang bị màn hình 6.9 inch 2 cạnh bên cong tạo nên vẻ đẹp sang trọng, độ phân giải đạt 2K 1440 x 3200 pixels cho hình ảnh hiển thị cực kỳ sắc nét. Ngoài ra tần số quét trên màn hình cũng nằm ở mức lớn 120Hz ở độ phân giải FHD và 60Hz ở QHD. Mọi hình ảnh khi bạn chơi game với khung hình cao hay trải nghiệm những bộ phim hành động cực kỳ mượt mà và sắc nét với công nghệ HDR10+.</p>
+                    <div class="anh wow bounceInLeft" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-1.jpg" alt="phone">
+                    </div>
+                    <p  class="wow bounceInLeft" data-wow-delay="0.05s">Samsung Note 20 Ultra 5G sở hữu bên trong một cấu hình cực kỳ mạnh mẽ cân dư sức các tựa game nặng nhất hiện nay. Máy sử dụng chip Exynos 992 tốc độ siêu nhanh đi kèm bộ nhớ RAM 12GB cho bộ nhớ 256GB giúp người dùng có thể thoải mái sử dụng đa nhiệm và lưu trữ thoải mái. Tất cả tạo nên một cấu hình cực kỳ mạnh mẽ có thể đáp ứng mọi nhu cầu của bạn trên một chiếc điện thoại.</p>
+                    <div class="anh wow bounceInRight" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-2_1.jpg" alt="phone">
+                    </div>
+                    <h3 class="wow bounceInRight" data-wow-delay="0.2s" style="text-align: justify;">Trang bị công nghệ 5G tương lai, tốc độ cao khi sử dụng dữ liệu</h3>
+                    <p class="wow bounceInRight" data-wow-delay="0.2s" style="text-align: justify;">Hầu hết trên tất cả các nước nói chung và Việt Nam nói riêng đều đang bắt đầu phủ sóng băng tần 5G dần dần để thay đổi các chuẩn thấp hiện tại. Nắm bắt được nhu cầu và xu hướng thị trường hãng đang trang bị Samsung Galaxy Note 20 Ultra công nghệ 5G tốc độ cao. Khi lựa chọn chiếc điện thoại này bạn sẽ không cần phải lo lắng chiếc điện thoại của mình sẽ không theo kịp các công nghệ đổi mới của tương lai.</p>
+                    <div class="anh wow bounceInUp" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-3_1.jpg" alt="phone">
+                    </div>
+                    <p class="wow bounceInUp" data-wow-delay="0.2s" style="text-align: justify;">Với công nghệ 5G người dùng có thể truy cập internet với tốc độ cực cao lên đến 10Gb/s nhanh hơn tất cả các đường truyền wifi cáp quang mà bạn đang sử dụng. Vì vậy lựa chọn Note 20 Ultra 5G không những mạnh mẽ về cấu hình với kích thước lớn mà còn giúp bạn không đi lùi so với những công nghệ nổi bật và quan trọng như 5G.</p>
+                    <h3 class="wow bounceInUp" data-wow-delay="0.2s" style="text-align: justify;">Camera sau 108MP zoom quang học lên đến 50X, camera trước 40MP</h3>
+                    <p class="wow bounceInUp" data-wow-delay="0.2s" style="text-align: justify;">Không những mang đến cấu hình máy hiệu năng cao Galaxy Note 20 Ultra 5G còn mang đến cho bạn bộ 3 camera có độ phân giải cao. Cụ thể camera chính có độ phân giải 108 MP khẩu độ f/1.8, camera periscope telephoto 13 MP khẩu độ f/3.4, camera góc rộng 2 MP khẩu độ f/2.2. Bộ 3 camera này cộng lại cho khả năng zoom quang học lên đến 50X. Giúp bạn lưu lại được những hình ảnh chất lượng cao ở khoảng cách xa và góc cực rộng với độ phân giải lên đến 8K.</p>
+                    <div class="anh wow rollIn" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-4.jpg" alt="phone">
+                    </div>
+                    <p class="wow rollIn" data-wow-delay="0.2s" style="text-align: justify;">Camera trước <strong>Note 20 Ultra 5G</strong> cũng được hãng trang bị độ phân giải cực cao lên đến 40MP. Chất lượng độ phân giải mà camera này mang lại cũng ở mức cao 4K/60fps. Giúp người dùng có thể thoải mái selfie lưu lại những hình ảnh sắc nét hay chat video call với hình ảnh cực kỳ rõ ràng.</p>
+                    <div class="anh wow rollOut" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-5.jpg" alt="phone">
+                    </div>
+                    <h3 class="wow rollOut" data-wow-delay="0.2s" style="text-align: justify;">Hỗ trợ sạc nhanh 45W qua USB Type C, pin dung lượng lớn 4500mAh</h3>
+                    <p class="wow rollOut" data-wow-delay="0.2s" style="text-align: justify;">Samsung Note 20 Ultra 5G được hãng trang bị khả năng sạc nhanh công suất lên đến 45W qua cổng USB Type C cho khả năng sạc đầy pin cực kỳ nhanh chóng chưa đến 90 phút. Không những vậy Note 20 Ultra 5G còn có khả năng sạc ngược cho thiết bị khác với công suất 9W. Máy cũng trang bị khả năng sạc không dây công suất lên đến 15W.</p>  
+                    <div class="anh wow slideInRight" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-6.jpg" alt="phone">
+                    </div>  
+                    <p class="wow slideInRight" data-wow-delay="0.2s" style="text-align: justify;">Với hiệu năng cực khủng kèm màn hình lớn Samsung đã trang bị cho Note 20 Ultra 5G viên pin li-ion có dung lượng lên đến 4500mAh. Bạn có thể sử dụng thoải mái chiếc điện thoại của mình trong cả ngày dài mà không sợ hết pin giữa chừng. Smartphone này có thể cân mọi tựa game với độ phân giải cao nhất lên đến hơn 8 tiếng liên tục mà không hết pin với chế độ tiết kiệm pin.</p>
+                    <h3 class="wow slideInRight" data-wow-delay="0.2s" style="text-align: justify;">Bút S-Pen siêu nhạy, nhiều trang bị kết nối hiện đại, cảm biến vân tay dưới màn hình</h3>
+                    <p class="wow slideInRight" data-wow-delay="0.2s" style="text-align: justify;">Hầu hết các dòng điện thoại Samsung Galaxy Note đều được trang bị bút S-Pen và Galaxy Note 20 Ultra 5G cũng không ngoại lệ. Chiếc bút này được cải tiến nhiều hơn so với các dòng cũ có độ nhạy cực cao và điều hướng thông minh cực kỳ chính xác. Bạn có thể sử dụng bút S-Pen để thỏa sức sáng tạo với những tính năng tuyệt vời và công nghệ cực kỳ thông minh.</p>
+                    <div class="anh wow slideInRight" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-7.jpg" alt="phone">
+                    </div>  
+                    <p class="wow slideInRight" data-wow-delay="0.2s" style="text-align: justify;">Samsung Note 20 Ultra 5G cũng được trang bị các kết nối mới nhất tiên tiến nhất hiện nay như: Wi-Fi 802.11 ac hỗ trợ băng tần kép. Bluetooth 5.0 cũng được Samsung đưa vào thiết bị để kết nối mang lại sự ổn định tối đa và nhiều cảm biến công nghệ mới giúp thiết bị thông minh hơn khi sử dụng.</p>
+                    <p class="wow slideInRight" data-wow-delay="0.2s" style="text-align: justify;"><strong>Nhiều màu sắc lựa chọn</strong><p>
+                    <div class="anh wow flipInX" data-wow-delay="0.2s">
+                        <img src="images/samsung-galaxy-note-20-2_1.webp" alt="phone">
+                    </div> 
+                    <p class="wow flipInX" data-wow-delay="0.2s" style="text-align: justify;">Nhằm đem lại thiết kế cực kỳ sang trọng và tinh tế Samsung đã trang bị cảm biến vân tay dưới màn hình. Giúp chiếc máy gọn gàng hơn khi cảm biến vân tay được đặt chiếm chỗ như trước. Người dùng có thể dễ dàng mở khóa chiếc điện thoại một cách nhanh nhất ngay trên màn hình <strong>Note 20 Ultra 5G</strong> mà không gặp phải bất kỳ khó khăn nào.</p>
+                    <div class="anh wow flipInY" data-wow-delay="0.2s">
+                        <img src="images/Samsung-Galaxy-Note-20-Ultra-5G-9.jpg" alt="phone">
+                    </div>  
+                    <h2 class="wow flipInY" data-wow-delay="0.2s" style="text-align: justify;">Mua Galaxy Note 20 Ultra chính hãng, giá tốt tại NamVux</h2>
+                    <p class="wow flipInY" data-wow-delay="0.2s" style="text-align: justify;">Có thể nói đây là một chiếc siêu phẩm cao cấp nhất của Samsung với nhiều hiệu năng, công nghệ tiên tiến Nếu bạn yêu thích và mong muốn sở hữu ngay <a href="#"><strong>Samsung Galaxy Note 20 Ultra </strong></a>chính hãng, bạn có thể mua ngay tại NamVux với chất lượng đảm bảo và chính hãng. Khi mua điện thoại tại NamVux, bạn sẽ luôn được hưởng chính sách bảo hành chuyên nghiệp, mức giá bán tại NamVux cũng vô cùng hợp lý.</p>
+                    
+                </div>
+                <div class="xem">
+                    <div>
+                        <span>Xem thêm đánh giá  <i class="fa fa-angle-down"></i></span>
+                    </div>
+                </div>
+
+                <div class="danh-gia wow bounceInUp" data-wow-delay="0.3s" >
+                    <p>Các video đánh giá sản phẩm</p>
+                    <ul class="col_4">
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/wgOYjUyszIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Mở hộp Samsung Galaxy Note 20 Ultra chính hãng</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/3_jaZvC__BY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>2H SÁNG NGỒI UNBOX GALAXY NOTE 20 ULTRA CHÍNH HÃNG: CỰC THỐN…</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/UQ5D8uMtVSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>2H ĐÊM MƯA GIÓ ĐI LẤY GALAXY NOTE 20 ULTRA FULLBOX... 33 TRIỆU VỀ ĐẬP HỘP:))</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/fDa3vhSZKSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Mở hộp Samsung Galaxy Note 20 Ultra RẺ HƠN RẤT NHIỀU so với GIÁ NIÊM YẾT</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/-VlzV9AQ9gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Trên tay Samsung Galaxy Note 20 Ultra - Bút Spen</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/9-LAOq-OEMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Mở hộp Samsung Galaxy Note 20 Ultra RẺ HƠN RẤT NHIỀU so với GIÁ NIÊM YẾT</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/4JLRzmnlTok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Samsung Galaxy Note 20 Ultra đã ngon hơn 69 lần, Camera khiến mình bất ngờ quá!</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/eohFJHCctkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Thử chơi Game liên tục trên Samsung Galaxy Note 20 Ultra - Bớt nóng hơn, FPS ổn định hơn?</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/SlqxqwwTRfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Cảm nhận về Galaxy Note 20 Ultra: Thiết Kế Quá Đỉnh!</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/EV-VqIyXliU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>So sánh Samsung Galaxy Note20 Ultra và iPhone 11 Pro Max</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/HbxgawS7IYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Đánh giá chi tiết Samsung Galaxy Note 20 Ultra</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/4C5dQ1o2R10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                            <div class="tieu-de">
+                                <h4>Galaxy Note 20 Ultra - Trải Nghiệm Thực Tế Sau 48H</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col30">
+                <div class="spif">
+                    <div class="tbhead">
+                        <h3>Thông số kỹ thuật</h3>
+                    </div>
+                        <div class="content">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Hãng sản xuất</td>
+                                        <td>Samsung</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kích thước</td>
+                                        <td>164.8 x 77.2 x 8.1 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trọng lượng</td>
+                                        <td>208 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bộ nhớ đệm / Ram</td>
+                                        <td>12 GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Loại SIM</td>
+                                        <td>2 SIM (Nano-SIM)</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Loại màn hình</td>
+                                        <td>Dynamic AMOLED 2X capacitive touchscreen, 16M colorsDynamic AMOLED 2X, 16M colors, Corning Gorilla Glass Victus, HDR10+, Always-on display, 120Hz@FHD/60Hz@QHD refresh rate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kích thước màn hình</td>
+                                        <td>6.9 inches</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Độ phân giải màn hình</td>
+                                        <td>1440 x 3088 pixels</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Hệ điều hành</td>
+                                        <td>Android</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phiên bản hệ điều hành</td>
+                                        <td>Android 10, One UI 2.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chipset</td>
+                                        <td>Exynos 990 (7 nm+)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CPU</td>
+                                        <td>Octa-core (2x2.73 GHz Mongoose M5 & 2x2.50 GHz Cortex-A76 & 4x2.0 GHz Cortex-A55)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPU</td>
+                                        <td>Mali-G77 MP11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Khe cắm thẻ nhớ</td>
+                                        <td>Không</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Camera sau</td>
+                                        <td>108 MP, f/1.8, 26mm (wide), 1/1.33", 0.8µm, PDAF, Laser AF, OIS<br> 12 MP, f/3.0, 103mm (periscope telephoto), 1.0µm, PDAF, OIS, 5x optical zoom, 50x hybrid zoom<br> 12 MP, f/2.2, 13mm (ultrawide), 1/2.55", 1.4µm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Camera trước</td>
+                                        <td>10 MP, f/2.2, 26mm (wide), 1/3.2", 1.22µm, Dual Pixel PDAF</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quay video</td>
+                                        <td>Trước: 4K@30/60fps, 1080p@30fps<br>Sau: 8K@24fps, 4K@30/60fps, 1080p@30/60/240fps, 720p@960fps, HDR10+, stereo sound rec., gyro-EIS & OIS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3G</td>
+                                        <td>HSPA 42.2/5.76 Mbps, EV-DO Rev.A 3.1 Mbps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4G</td>
+                                        <td>LTE-A (6CA) Cat18 1200/200 Mbps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5G</td>
+                                        <td>mmWave, Sub-6 GHz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WLAN</td>
+                                        <td>Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct, hotspot</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bluetooth</td>
+                                        <td>5.0, A2DP, LE, aptX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPS</td>
+                                        <td>A-GPS, GLONASS, BDS, GALILEO</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NFC</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>USB</td>
+                                        <td>3.2, Type-C 1.0 reversible connector, USB On-The-Go</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cảm biến</td>
+                                        <td>Cảm biến vân tay siêu âm, cảm biến gia tốc, cảm biến tiệm cận, cảm biến sáng, con quay hồi chuyển, la bàn, cảm biến áp kế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pin</td>
+                                        <td>Non-removable Li-Ion 4500 mAh battery<br> Fast charging 25W<br> USB Power Delivery 3.0<br> Fast Qi/PMA wireless charging<br> Reverse wireless charging 9W</td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                </div>
+                <div class="xem-dt">
+                    <div>
+                        <span>Xem thêm</span>
+                    </div>
+                </div>
+
+                <div class="spif">
+                    <div class="tbhead">
+                        <a href="#"><h3>Tin tức về</br><span>Samsung Galaxy Note 20 Ultra 5G</span></h3></a>  
+                    </div>
+                    <div class="content">
+                        <table>
+                            <tbody class="news">
+                                <tr>
+                                    <td><a href="#"><img src="images/apple-se-khai-thac-toi-da-suc-manh-cua-chip-u1-nho-ios-14-2006251523511-350x250.jpg"></a></td>
+                                    <td><a href="#"><h4>Công nghệ ít ai biết được cả Apple và Samsung sử dụng như một “giác quan” đặc biệt của smartphone</h4></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/tinh-nang-Galaxy-Note-20-ma-Apple-can-hoc-hoi-face-350x250 (1).jpg"></a></td>
+                                    <td><a href="#"><h4>Đây là những tính năng tốt nhất của Galaxy Note 20 mà Apple nên học hỏi</h4></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/trai-nghiem-SPen-tren-Note-20-4-2-350x250.jpg"></a></td>
+                                    <td><a href="#"><h4>Tin đồn: Samsung sẽ khai tử dòng Galaxy Note vào năm tới, trang bị S Pen cho Galaxy S21?</h4></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/s-pen-1_799x450-350x250.jpg"></a></td>
+                                    <td><a href="#"><h4>Dòng smartphone cao cấp Galaxy Note 20 chính thức lên kệ CellphoneS, có thu cũ đổi mới, tặng phiếu mua hàng 6.5 triệu đồng</h4></a></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+            
+    </section>
+
+
+    <footer>
+        <div class="tong" style="border-bottom: 1px solid whitesmoke;">
+            <div class="all" style="background-color: #333333; border-bottom: 0">
+                <div class="col25" idx=1>
+                    <h3>
+                        THÔNG TIN LIÊN HỆ  
+                    </h3>
+                    <ul class="lien-he">
+                        <li><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</li>
+                        <li><i class="fas fa-phone"></i><a href="#">0382890580</a></li>
+                        <li><i class="fas fa-envelope-square"></i><a href="mailto:dangngochoainam0601@gmail.com">dangngoc</a></li>
+                        <li><i class="fab fa-facebook-square"></i><a href="#">dangngochoainam</a></li>
+                        <li><i class="fab fa-skype"></i><a href="#">dangngochoainamds</a></li>
+                    </ul>
+                    <div class="media">
+                        <a href="https://www.facebook.com/DangNgocHoaiNam01/"><img src="images/118491681_744234789468835_7394762651302894043_n.png" alt="fb"></a>
+                        <a href="#"><img src="images/118615476_1004514039980589_8967206455643092027_n.png" alt="intas"></a>
+                        <a href="#"><img src="images/118581067_591908108061418_7709479568019668839_n.png" alt="tiw"></a>
+                        <a href="#"><img src="images/117877423_1314534258883909_514585277045609791_n.png" alt="youtobe"></a>
+                    </div>
+                </div>
+                <div class="col25" idx=2>
+                    <h3>
+                        LIÊN KẾT
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=3>
+                    <h3>
+                        HỖ TRỢ 
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Tư vấn khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=4>
+                    <h3>
+                        TẢI ỨNG DỤNG TRÊN 
+                    </h3>
+                    <ul class="lien-he">
+                        <li>Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay. </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-googleplay.jpg" alt="google-play" ></a>
+                        </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-appstore.jpg" alt="appstore" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+            <div class="all bottom" style="border-bottom: 0">
+                <div class="col50">
+                    &copy; Bản quyền thuộc về . Thiết kế website icon NamVux              
+                </div>
+                <div class="hinh-thuc">
+                    <img src="images/img-payment.png" alt="thanh-toan" />            
+                </div>
+            </div>
+        
+   </footer>
+
+
+
+    
+</body>
+</html>

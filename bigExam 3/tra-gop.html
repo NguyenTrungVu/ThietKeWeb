@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="cs/css_tra-gop.css" rel="stylesheet">
+    <link href="cs/menu-res.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="cs/header.css" rel="stylesheet">
+    <link href="images/1.png" rel="shorcut icon">
+    <title>Trả góp</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/traGop.js"></script>
+    <script src="js/footer-res.js"></script>
+</head>
+<body>
+    <header class="tong" style="background-color:#ff0000;">
+        <div class="all " style="background-color:#ff0000; border-bottom: 0;">
+            <div class="logo ">
+                <a href="bigExam.html"><img src="images/logo.png" alt="logo" width="37" height="32" ></a> 
+            </div>
+            <div class="ndsearch">
+                <form class="f-search">
+                    <div class="cb-area">
+                        <button type="button">Hồ Chí Minh</button>
+                        <div class="cb-areasub">
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hà Nội</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hồ Chí Minh</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Đà Nẵng</a>
+                        </div>
+                    </div>
+                    <div class="ex_search">
+                        <input type="text" class="ex_stext" placeholder="Bạn cần tìm gì ..." id="ex_stext">
+                        <button id="ex_sbm">
+                            <svg width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu"> 
+                <ul class="nd-menu media">
+                    <li  class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                            <div class="dropdown-content">
+                                <a href="#" >Iphone</a>
+                                <a href="#" >SamSung</a>
+                                <a href="#" >Huawei</a>
+                                <a href="#" >Readme</a>
+                                <a href="#" >Vsmart</a>
+                                <a href="#" >Vivo</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                            <div class="dropdown-content">
+                                <a href="#" >Huawei Tab</a>
+                                <a href="#" >SamSung Tab</a>
+                                <a href="#" >Ipad Air</a>
+                                <a href="#" >Ipad Pro</a>
+                                <a href="#" >Ipad Mini</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                            <div class="dropdown-content">
+                                <a href="#" >Tai nghe</a>
+                                <a href="#" >Cáp, sạc</a>
+                                <a href="#" >Pin dự phòng</a>
+                                <a href="#" >Dán màn hình</a>
+                                <a href="#" >Ốp lưng</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                            <div class="dropdown-content">
+                                <a href="#" >Ép kính</a>
+                                <a href="#" >Chân sạc</a>
+                                <a href="#" >Thay pin</a>
+                                <a href="#" >Thay màn hình</a>
+                                <a href="#" >Thay vỏ</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+                    <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+                </ul>
+            </div>
+             <!--<div class="menu-icon">
+                <a><i class="fas fa-bars"></i></a>
+                <a><i class="fas fa-times"></i></a>
+            </div>-->
+
+        </div>
+        <!-- mày bỏ cái này vào phần  css header nhen
+
+            <ul class="nd-menu secondmenu">
+            <li  class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                    <div class="dropdown-content pos">
+                        <a href="#" >iPhone</a>
+                        <a href="#" >SamSung</a>
+                        <a href="#" >Huawei</a>
+                        <a href="#" >Readme</a>
+                        <a href="#" >Vsmart</a>
+                        <a href="#" >Vivo</a>
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                    <div class="dropdown-content pos">
+                        <a href="#" >Huawei Tab</a>
+                        <a href="#" >SamSung Tab</a>
+                        <a href="#" >Ipad Air</a>
+                        <a href="#" >Ipad Pro</a>
+                        <a href="#" >Ipad Mini</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                    <div class="dropdown-content pos">
+                        <a href="#" >Tai nghe</a>
+                        <a href="#" >Cáp, sạc</a>
+                        <a href="#" >Pin dự phòng</a>
+                        <a href="#" >Dán màn hình</a>
+                        <a href="#" >Ốp lưng</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                    <div class="dropdown-content pos">
+                        <a href="#" >Ép kính</a>
+                        <a href="#" >Chân sạc</a>
+                        <a href="#" >Thay pin</a>
+                        <a href="#" >Thay màn hình</a>
+                        <a href="#" >Thay vỏ</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+            <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+        </ul>-->
+
+
+    </header>
+
+
+    <section class="content">
+        <div class="tra-gop fl">
+            <div class="phone-img">
+                <img src="images/thumb_Note20_Ultra5G-300x300.jpg">
+            </div>
+            <div class="phone-name">
+                <div>
+                    <h1>Mua trả góp Samsung Galaxy Note 20 Ultra 5G</h1>
+                    <b>Giá:</b>
+                    <span> 32.990.000 ₫</span>
+                </div> 
+            </div>
+        </div>
+        <div class="tra-gop">
+            <div class="if-sale">
+                <strong>Ưu đãi & Khuyến mãi khi mua trả góp Samsung Galaxy Note 20 Ultra 5G</strong>
+                <h4>- Chương trình khuyến mại:</h4>
+                <ul>
+                    <li><a href="#"> [1-30/9] Thu cũ lên đời Note 2020 - Trợ giá 5 triệu (có điều kiện kèm theo)</a></li>
+                </ul>
+                <h4>- Trả góp 0%:</h4>
+                <ul>
+                    <li><a href="#">Trả góp lãi suất 0% với Home Credit. Trả trước 30%, kỳ hạn 6 tháng (Áp dụng cùng các khuyến mại khác) </a></li>
+                    <li><a href="#">  Trả góp 0% với FE Credit - trả trước từ 30% (áp dụng cùng các khuyến mãi khác)</a></li>
+                </ul>
+                <h4>- Khuyến mãi hãng:</h4>
+                <ul>
+                    <li><a href="#">Giảm thêm 3 triệu qua Galaxy Gift </a></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="cart">
+            <div style="padding: 5px 5px 5px 29px">
+                Các kì hạn có gói 
+                <b style="color: #d70018;">Trả góp 0%
+                </b>:
+                6 tháng, 9 tháng, 12 tháng,9 tháng, 12 tháng               
+            </div>
+        </div>
+        <div style="padding-top: 0 5px 5px">
+            <div class="so-thang">
+                <p><strong>Chọn số tháng trả góp</strong></p>
+                <ul class="listmonths">
+                    <li idx = 1 value="6">
+                        <a href="#">
+                            <b class="active">6 Tháng</b>
+                        </a>
+                    </li>
+                    <li idx = 2 value="8">
+                        <a href="#">
+                            <b>8 Tháng</b>
+                        </a>
+                    </li>
+                    <li idx = 3>
+                        <a href="#">
+                            <b>10 Tháng</b>
+                        </a>
+                    </li>
+                    <li idx = 4>
+                        <a href="#">
+                            <b>12 Tháng</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="thoi-han">
+            <!--6 tháng-->
+            <div class="tablecontent">
+                <ul class="table">
+                    <li>
+                        <aside>Công ty</aside>
+                        <aside><i class="icontg-HC"></i></aside>
+                        <aside><i class="icontg-FE"></i></aside>
+                    </li>
+                    <li>
+                        <aside>Giá sản phẩm</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                    </li>
+                    <li>
+                        <aside>Giá mua trả góp</aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Trả trước
+                            <select class="prepaid-percent">
+                                <option value="0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3">30%</option>
+                                <option selected="selected" value="0.4">40%</option>
+                                <option value="0.5">50%</option>
+                                <option value="0.6">60%</option>
+                                <option value="0.7">70%</option>
+                                <option value="0.8">80%</option>
+                            </select>
+                        </aside>
+                        <aside class="kq">13,196,000.00 ₫</aside>
+                        <aside class="kq">13,196,000.00 ₫</aside>
+                    </li>
+                    <li>
+                        <aside>Lãi suất</aside>
+                        <aside>
+                            <span class="special-percent lai-HC">0%</span>
+                        </aside>
+                        <aside ><span class="special-percent">3.55 %</span></aside>
+                    </li>
+                    <li>
+                        <aside>Giấy tờ cần có</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                    </li>
+                    <li>
+                        <div class="subtable">
+                            <aside>Góp mỗi tháng</aside>
+                            <aside class="gmt" id="ma-HC">3.408.000 ₫</aside>
+                            <aside class="gmtFE" id="ma-FE">3.511.000 ₫</aside>
+                        </div>
+                        <div class="infodetail">
+                            <div class="subtable">
+                                <aside>Gốc + lãi</aside>
+                                <aside class="goc" id="manofee-1" >3.299.000&nbsp;₫</aside>
+                                <aside class="gocFE" id="manofee-1">4.002.000&nbsp;₫</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside>Phí thu hộ</aside>
+                                <aside class="pth" value ="11000">11.000 ₫/tháng</aside>
+                                <aside>12.000 ₫/tháng</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside class="checked" onclick="RecheckInsurance(this,true)">
+                                    <i class="icontg-checkbox"></i>Bảo hiểm 
+                                </aside>
+                                <aside class="bh" value ="98000">98.000 ₫/tháng</aside>
+                                <aside>165.000 ₫/tháng</aside>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <aside>Tổng tiền phải trả</aside>
+                        <aside><label class="tongTien" id="totalamount-HC">33.644.000 ₫</label></aside>
+                        <aside><label class="tongTienFE" id="totalamount-FE">32.143.000 ₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Chênh lệch với mua trả thẳng </aside>
+                        <aside class="cl">558.000 ₫</aside>
+                        <aside class="clFE">4.443.000 ₫</aside>
+                    </li>
+                    <li class="buy-action">
+                        <aside></aside>
+                        <aside class="hc-action" style="padding: 5px 0 ">
+                            <button class="bt">Chọn mua<br>(Duyệt hồ sơ online)</button>
+                        </aside>
+                        <aside class="fe-action" style="text-align: justify;">
+                            <b>FE Credit chưa hổ trợ duyệt hồ sơ online. Xin quý khách vui lòng đến trực tiếp cửa hàng để làm hồ sơ.</b>
+                        </aside>
+                    </li>
+                </ul>
+            </div>
+            <!--8 tháng-->
+            <div class="tablecontent">
+                <ul class="table">
+                    <li>
+                        <aside>Công ty</aside>
+                        <aside><i class="icontg-HC"></i></aside>
+                        <aside><i class="icontg-FE"></i></aside>
+                    </li>
+                    <li>
+                        <aside>Giá sản phẩm</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                    </li>
+                    <li>
+                        <aside>Giá mua trả góp</aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Trả trước
+                            <select class="prepaid-percent" >
+                                <option value="0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3">30%</option>
+                                <option selected="selected" value="0.4">40%</option>
+                                <option value="0.5">50%</option>
+                                <option value="0.6">60%</option>
+                                <option value="0.7">70%</option>
+                                <option value="0.8">80%</option>
+                            </select>
+                        </aside>
+                        <aside class="kq">13.196.000&nbsp;₫ (40%)</aside>
+                        <aside class="kq">13.196.000&nbsp;₫ (40%)</aside>
+                    </li>
+                    <li>
+                        <aside>Lãi suất</aside>
+                        <aside>
+                            <span class="special-percent">1.93 %</span>
+                        </aside>
+                        <aside ><span class="special-percent">3.55 %</span></aside>
+                    </li>
+                    <li>
+                        <aside>Giấy tờ cần có</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                    </li>
+                    <li>
+                        <div class="subtable">
+                            <aside>Góp mỗi tháng</aside>
+                            <aside class="gmt" id="ma-HC">2.492.000 ₫</aside>
+                            <aside  id="ma-FE">2.783.000 ₫</aside>
+                        </div>
+                        <div class="infodetail">
+                            <div class="subtable">
+                                <aside>Gốc + lãi</aside>
+                                <aside class="goc" id="manofee-1">2.398.000 ₫</aside>
+                                <aside id="manofee-1" >2.668.000 ₫</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside>Phí thu hộ</aside>
+                                <aside>11.000&nbsp;₫/tháng</aside>
+                                <aside>12.000&nbsp;₫/tháng</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside class="checked" onclick="RecheckInsurance(this,true)">
+                                    <i class="icontg-checkbox"></i>Bảo hiểm 
+                                </aside>
+                                <aside>83.000 ₫/tháng</aside>
+                                <aside>104.000 ₫/tháng</aside>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <aside>Tổng tiền phải trả</aside>
+                        <aside><label class="tongTien" id="totalamount-HC">31.019.000 ₫</label></aside>
+                        <aside><label id="totalamount-FE">33.347.000 ₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Chênh lệch với mua trả thẳng </aside>
+                        <aside>3.319.000 ₫</aside>
+                        <aside>5.647.000 ₫</aside>
+                    </li>
+                    <li class="buy-action">
+                        <aside></aside>
+                        <aside class="hc-action" style="padding: 5px 0 ">
+                            <button class="bt">Chọn mua<br>(Duyệt hồ sơ online)</button>
+                        </aside>
+                        <aside class="fe-action" style="text-align: justify;">
+                            <b>FE Credit chưa hổ trợ duyệt hồ sơ online. Xin quý khách vui lòng đến trực tiếp cửa hàng để làm hồ sơ.</b>
+                        </aside>
+                    </li>
+                </ul>
+            </div>
+            <!--10 tháng-->
+            <div class="tablecontent">
+                <ul class="table">
+                    <li>
+                        <aside>Công ty</aside>
+                        <aside><i class="icontg-HC"></i></aside>
+                        <aside><i class="icontg-FE"></i></aside>
+                    </li>
+                    <li>
+                        <aside>Giá sản phẩm</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                    </li>
+                    <li>
+                        <aside>Giá mua trả góp</aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Trả trước
+                            <select class="prepaid-percent" >
+                                <option value="0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3">30%</option>
+                                <option selected="selected" value="0.4">40%</option>
+                                <option value="0.5">50%</option>
+                                <option value="0.6">60%</option>
+                                <option value="0.7">70%</option>
+                                <option value="0.8">80%</option>
+                            </select>
+                        </aside>
+                        <aside>13.196.000&nbsp;₫ (40%)</aside>
+                        <aside>13.196.000&nbsp;₫ (40%)</aside>
+                    </li>
+                    <li>
+                        <aside>Lãi suất</aside>
+                        <aside>
+                            <span class="special-percent">1.93 %</span>
+                        </aside>
+                        <aside ><span class="special-percent">3.55 %</span></aside>
+                    </li>
+                    <li>
+                        <aside>Giấy tờ cần có</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                    </li>
+                    <li>
+                        <div class="subtable">
+                            <aside>Góp mỗi tháng</aside>
+                            <aside id="ma-HC">2.077.000 ₫</aside>
+                            <aside id="ma-FE">2.347.000 ₫</aside>
+                        </div>
+                        <div class="infodetail">
+                            <div class="subtable">
+                                <aside>Gốc + lãi</aside>
+                                <aside id="manofee-1" >1.983.000 ₫</aside>
+                                <aside id="manofee-1">2.252.000 ₫</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside>Phí thu hộ</aside>
+                                <aside>11.000&nbsp;₫/tháng</aside>
+                                <aside>12.000&nbsp;₫/tháng</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside class="checked" onclick="RecheckInsurance(this,true)">
+                                    <i class="icontg-checkbox"></i>Bảo hiểm 
+                                </aside>
+                                <aside>83.000 ₫/tháng</aside>
+                                <aside>83.000 ₫/tháng</aside>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <aside>Tổng tiền phải trả</aside>
+                        <aside><label id="totalamount-HC">31.849.000 ₫</label></aside>
+                        <aside><label id="totalamount-FE">34.551.000 ₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Chênh lệch với mua trả thẳng </aside>
+                        <aside>4.149.000 ₫</aside>
+                        <aside>6.851.000 ₫</aside>
+                    </li>
+                    <li class="buy-action">
+                        <aside></aside>
+                        <aside class="hc-action" style="padding: 5px 0 ">
+                            <button class="bt">Chọn mua<br>(Duyệt hồ sơ online)</button>
+                        </aside>
+                        <aside class="fe-action" style="text-align: justify;">
+                            <b>FE Credit chưa hổ trợ duyệt hồ sơ online. Xin quý khách vui lòng đến trực tiếp cửa hàng để làm hồ sơ.</b>
+                        </aside>
+                    </li>
+                </ul>
+            </div>
+            <!-- 12 tháng-->
+            <div class="tablecontent">
+                <ul class="table">
+                    <li>
+                        <aside>Công ty</aside>
+                        <aside><i class="icontg-HC"></i></aside>
+                        <aside><i class="icontg-FE"></i></aside>
+                    </li>
+                    <li>
+                        <aside>Giá sản phẩm</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                        <aside>32.990.000&nbsp;₫</aside>
+                    </li>
+                    <li>
+                        <aside>Giá mua trả góp</aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                        <aside><label>32.990.000&nbsp;₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Trả trước
+                            <select class="prepaid-percent" >
+                                <option value="0">0%</option>
+                                <option value="0.1">10%</option>
+                                <option value="0.2">20%</option>
+                                <option value="0.3">30%</option>
+                                <option selected="selected" value="0.4">40%</option>
+                                <option value="0.5">50%</option>
+                                <option value="0.6">60%</option>
+                                <option value="0.7">70%</option>
+                                <option value="0.8">80%</option>
+                            </select>
+                        </aside>
+                        <aside>13.196.000&nbsp;₫ (40%)</aside>
+                        <aside>13.196.000&nbsp;₫ (40%)</aside>
+                    </li>
+                    <li>
+                        <aside>Lãi suất</aside>
+                        <aside>
+                            <span class="special-percent">0 %</span>
+                        </aside>
+                        <aside ><span class="special-percent">0 %</span></aside>
+                    </li>
+                    <li>
+                        <aside>Giấy tờ cần có</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                        <aside>CMND + Bằng lái xe / hộ khẩu</aside>
+                    </li>
+                    <li>
+                        <div class="subtable">
+                            <aside>Góp mỗi tháng</aside>
+                            <aside  id="ma-HC">1.478.000 ₫</aside>
+                            <aside id="ma-FE">1.488.000 ₫</aside>
+                        </div>
+                        <div class="infodetail">
+                            <div class="subtable">
+                                <aside>Gốc + lãi</aside>
+                                <aside id="manofee-1">1.385.000 ₫</aside>
+                                <aside id="manofee-1" >1.385.000 ₫</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside>Phí thu hộ</aside>
+                                <aside>11.000&nbsp;₫/tháng</aside>
+                                <aside>12.000&nbsp;₫/tháng</aside>
+                            </div>
+                            <div class="subtable">
+                                <aside class="checked" onclick="RecheckInsurance(this,true)">
+                                    <i class="icontg-checkbox"></i>Bảo hiểm 
+                                </aside>
+                                <aside>82.000 ₫/tháng</aside>
+                                <aside>91.000 ₫/tháng</aside>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <aside>Tổng tiền phải trả</aside>
+                        <aside><label id="totalamount-HC">28.816.000 ₫</label></aside>
+                        <aside><label id="totalamount-FE">28.941.000 ₫</label></aside>
+                    </li>
+                    <li>
+                        <aside>Chênh lệch với mua trả thẳng </aside>
+                        <aside>1.116.000 ₫</aside>
+                        <aside>1.241.000 ₫</aside>
+                    </li>
+                    <li class="buy-action">
+                        <aside></aside>
+                        <aside class="hc-action" style="padding: 5px 0 ">
+                            <button class="bt">Chọn mua<br>(Duyệt hồ sơ online)</button>
+                        </aside>
+                        <aside class="fe-action" style="text-align: justify;">
+                            <b>FE Credit chưa hổ trợ duyệt hồ sơ online. Xin quý khách vui lòng đến trực tiếp cửa hàng để làm hồ sơ.</b>
+                        </aside>
+                    </li>
+                </ul>
+            </div>
+
+        
+        </div>
+
+
+        <div class="thu-tuc">
+            <h2 style="margin-left: 30px;font-size: 16px;font-weight: 700;color: #252525;">Thông tin trả góp</h2>
+            <ul>
+                
+                <li style="border-bottom:1px solid #ccc ;">
+                    <span class="l">Gói trả góp:</span>  <span style="text-align: right; font-weight: 600;" class="r1"></span>
+                    <span class="l">Trả trước:</span> <span style="text-align: right; font-weight: 600;" class="r2"></span>
+                    <span class="l">Góp mỗi tháng:</span> <span style="text-align: right; font-weight: 600;" class="r3"></span>
+                    <span  style="margin-bottom: 15px; font-size: 14px;" class="l"><b>Tổng tiền:</b></span> <span style="text-align: right; font-weight: 600;" class="r4"></span>
+                </li>
+                <li style="margin-top: 15px;width: 100%;">
+                    <span class="gttt" style="display:block; width: 100%;"></span>
+                    <span class="ct" style="display: block; width: 100%;"></span>
+                </li>
+                <li>
+                    <span style="width: 100%; ;display:block;color: #DE1D28; font-weight: 700;"><i>- Sau khi hồ sơ được duyệt, khách hàng mang theo CMND, GPLX / Hộ khẩu đến cửa hàng để ký hợp đồng và nhận sản phẩm.</i></span>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="thong-tin" style="width: 95%;margin: 0 auto;">
+            <h2 style="font-size: 25px;font-weight: 700">Thông tin người mua</h2>
+            <div class="info-custom">
+                <div class="inf" style="padding-right:5px">
+                    <label>Họ và tên *</label>
+                    <input id="tenId" type="text">
+                    <b id="e-ten"></b>
+                
+                </div>
+                <div class="inf" style="padding-left:5px">
+                    <label>Số điện thoại đặt hàng *</label>
+                    <input id="sdtId" type="number">
+                    <b id="e-sdt"></b>
+                </div>
+            </div>
+
+
+            <div class="info-custom">
+                <div class="inf" style="padding-right:5px">
+                    <label>Nhập số CMND *</label>
+                    <input id="cmndId" type="number">
+                    <b id="e-cmnd"></b>
+                
+                </div>
+                <div class="inf" style="padding-left:5px">
+                    <label>Địa chỉ hộ khẩu *</label>
+                    <input id="shkId" type="number">
+                    <b id="e-shk"></b>
+                </div>
+            </div>
+            <div class="bt-duyet">
+                <button id="duyet">
+                    <strong>ĐĂNG KÝ TRẢ GÓP</strong>
+                    <br>
+                    (Xét duyệt nhanh)
+                </button>
+            </div>
+                <p style="text-align: center;margin: 10px 0; padding: 0 0 20px; background-color: rgba(238,238,238,.25);"><a href="#" style="text-decoration: none;margin:0;color: #d70018;">Thông tin bạn cung cấp sẽ được chuyển cho công ty tài chính để làm hồ sơ góp.</a></p>
+            
+        </div>
+
+
+
+    
+    </section>
+    <footer>
+        <div class="tong" style="border-bottom: 1px solid whitesmoke;">
+            <div class="all" style="background-color: #333333; border-bottom: 0">
+                <div class="col25" idx=1>
+                    <h3>
+                        THÔNG TIN LIÊN HỆ  
+                    </h3>
+                    <ul class="lien-he">
+                        <li><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</li>
+                        <li><i class="fas fa-phone"></i><a href="#">0382890580</a></li>
+                        <li><i class="fas fa-envelope-square"></i><a href="mailto:dangngochoainam0601@gmail.com">dangngoc</a></li>
+                        <li><i class="fab fa-facebook-square"></i><a href="#">dangngochoainam</a></li>
+                        <li><i class="fab fa-skype"></i><a href="#">dangngochoainamds</a></li>
+                    </ul>
+                    <div class="media">
+                        <a href="https://www.facebook.com/DangNgocHoaiNam01/"><img src="images/118491681_744234789468835_7394762651302894043_n.png" alt="fb"></a>
+                        <a href="#"><img src="images/118615476_1004514039980589_8967206455643092027_n.png" alt="intas"></a>
+                        <a href="#"><img src="images/118581067_591908108061418_7709479568019668839_n.png" alt="tiw"></a>
+                        <a href="#"><img src="images/117877423_1314534258883909_514585277045609791_n.png" alt="youtobe"></a>
+                    </div>
+                </div>
+                <div class="col25" idx=2>
+                    <h3>
+                        LIÊN KẾT
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=3>
+                    <h3>
+                        HỖ TRỢ 
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Tư vấn khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=4>
+                    <h3>
+                        TẢI ỨNG DỤNG TRÊN 
+                    </h3>
+                    <ul class="lien-he">
+                        <li>Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay. </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-googleplay.jpg" alt="google-play" ></a>
+                        </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-appstore.jpg" alt="appstore" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+            <div class="all bottom" style="border-bottom: 0">
+                <div class="col50">
+                    &copy; Bản quyền thuộc về . Thiết kế website icon NamVux              
+                </div>
+                <div class="hinh-thuc">
+                    <img src="images/img-payment.png" alt="thanh-toan" />            
+                </div>
+            </div>
+        
+   </footer>
+    
+</body>
+</html>

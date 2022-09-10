@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="cs/css_mua.css" rel="stylesheet">
+    <link href="cs/header.css" rel="stylesheet">
+    <link href="cs/menu-res.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/muaHang.js"></script>
+    <script src="js/footer-res.js"></script>
+    <link href="images/1.png" rel="shorcut icon">
+    <title>Mua hàng</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    
+    
+</head>
+
+
+<header class="tong" style="background-color:#ff0000;">
+    <div class="all " style="background-color:#ff0000; border-bottom: 0; align-items: center; ">
+        <div class="logo ">
+            <a href="bigExam.html"><img src="images/logo.png" alt="logo" width="37" height="32" ></a> 
+        </div>
+        <div class="ndsearch">
+            <form class="f-search">
+                <div class="cb-area">
+                    <button type="button">Hồ Chí Minh</button>
+                    <div class="cb-areasub">
+                        <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hà Nội</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hồ Chí Minh</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Đà Nẵng</a>
+                    </div>
+                </div>
+                <div class="ex_search">
+                    <input type="text" class="ex_stext" placeholder="Bạn cần tìm gì ..." id="ex_stext">
+                    <button id="ex_sbm">
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="menu"> 
+            <ul class="nd-menu media">
+                <li  class="menu-drop dropdown">
+                    <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                        <div class="dropdown-content">
+                            <a href="#" >iPhone</a>
+                            <a href="#" >SamSung</a>
+                            <a href="#" >Huawei</a>
+                            <a href="#" >Readme</a>
+                            <a href="#" >Vsmart</a>
+                            <a href="#" >Vivo</a>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-drop dropdown">
+                    <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                        <div class="dropdown-content">
+                            <a href="#" >Huawei Tab</a>
+                            <a href="#" >SamSung Tab</a>
+                            <a href="#" >Ipad Air</a>
+                            <a href="#" >Ipad Pro</a>
+                            <a href="#" >Ipad Mini</a>
+                        
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-drop dropdown">
+                    <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                        <div class="dropdown-content">
+                            <a href="#" >Tai nghe</a>
+                            <a href="#" >Cáp, sạc</a>
+                            <a href="#" >Pin dự phòng</a>
+                            <a href="#" >Dán màn hình</a>
+                            <a href="#" >Ốp lưng</a>
+                        
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-drop dropdown">
+                    <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                        <div class="dropdown-content">
+                            <a href="#" >Ép kính</a>
+                            <a href="#" >Chân sạc</a>
+                            <a href="#" >Thay pin</a>
+                            <a href="#" >Thay màn hình</a>
+                            <a href="#" >Thay vỏ</a>
+                        
+                        </div>
+                    </a>
+                </li>
+                <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+                <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+            </ul>
+        </div>
+        <!--<div class="menu-icon">
+                <a><i class="fas fa-bars"></i></a>
+                <a><i class="fas fa-times"></i></a>
+            </div>-->
+
+    </div>
+<!-- mày bỏ cái này vào phần  css header nhen
+
+            <ul class="nd-menu secondmenu">
+            <li  class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                    <div class="dropdown-content pos">
+                        <a href="#" >iPhone</a>
+                        <a href="#" >SamSung</a>
+                        <a href="#" >Huawei</a>
+                        <a href="#" >Readme</a>
+                        <a href="#" >Vsmart</a>
+                        <a href="#" >Vivo</a>
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                    <div class="dropdown-content pos">
+                        <a href="#" >Huawei Tab</a>
+                        <a href="#" >SamSung Tab</a>
+                        <a href="#" >Ipad Air</a>
+                        <a href="#" >Ipad Pro</a>
+                        <a href="#" >Ipad Mini</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                    <div class="dropdown-content pos">
+                        <a href="#" >Tai nghe</a>
+                        <a href="#" >Cáp, sạc</a>
+                        <a href="#" >Pin dự phòng</a>
+                        <a href="#" >Dán màn hình</a>
+                        <a href="#" >Ốp lưng</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                    <div class="dropdown-content pos">
+                        <a href="#" >Ép kính</a>
+                        <a href="#" >Chân sạc</a>
+                        <a href="#" >Thay pin</a>
+                        <a href="#" >Thay màn hình</a>
+                        <a href="#" >Thay vỏ</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+            <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+        </ul>-->
+
+
+</header>
+
+
+
+
+<body>
+
+    <section class="foot">
+        <div class="back">
+            <div class="right">
+                <h1>Giỏ hàng của bạn</h1>
+            </div>
+            <div class="left">
+                <a href="info.html"><i class="fa fa-chevron-left"></i> Tiếp tục tìm kiếm sản phẩm</a>
+            </div>
+        </div>
+        <div class="gio-hang">
+            <div class="items" style="padding: 0">
+                <div class="images">
+                    <img src="images/yellow_final_3.jpg" alt="phone">
+                </div>
+                <div class="info">
+                    <h2 id="ten-sp" style="font-weight: 600; margin-top: 10px;">Samsung Galaxy Note Note 20 Ultra 5G-Vàng đồng</h2>
+                    <span class="price">32.990.000&nbsp;₫</span>
+                    <h4>- Chương trình khuyến mại:</h4>
+                    <ul class="gthieu">
+                        <li><span>[1-30/9] Thu cũ lên đời Note 2020 - Trợ giá 5 triệu (có điều kiện kèm theo)</span></li>
+                    </ul>
+                    <h4>- Trả góp 0%:</h4>
+                    <ul class="gthieu">
+                        <li><span>Trả góp lãi suất 0% với Home Credit. Trả trước 30%, kỳ hạn 6 tháng (Áp dụng cùng các khuyến mại khác)</span></li>
+                        <li><span>Trả góp 0% với FE Credit - trả trước từ 30% (áp dụng cùng các khuyến mãi khác)</span></li>
+                    </ul>
+                    <h4>- Khuyến mãi hãng:</h4>
+                    <ul class="gthieu">
+                        <li><span>Giảm thêm 3 triệu qua Galaxy Gift</span></li>
+                    </ul>
+                    <div class="ct-khuyenmai">
+                        <div class="box1">
+                                <i class="fa fa-gift"></i><span> CHỌN CHƯƠNG TRÌNH KHUYẾN MÃI</span>
+                        </div>
+                        <div class="box2">		             
+                            <input type="radio"/>- Tặng Sim Data 4G Mobifone - Trọn 12 tháng 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items" style="padding: 15px;">
+                <p class="trai">Tổng tiền</p>
+                <p class="phai">32.990.000 ₫</p>
+            </div>
+            <div class="items" style="display: block;">
+                <p style="padding: 10px 15px 0 0;text-align: right; color: #d70018;font-size: 12px;"><i>* Miễn phí giao hàng</i></p>
+                <h2 style="font-size: 18px;font-weight: bold; margin-bottom: 15px;">Thông tin mua hàng</h2>
+                <div class="info-custom">
+                    <div class="inf" style="padding-right:5px">
+                        <label>Họ và tên (bắt buộc)</label>
+                        <input id="tenId" type="text">
+                        <b id="e-ten"></b>
+                    
+                    </div>
+                    <div class="inf" style="padding-left:5px">
+                        <label>Số điện thoại đặt hàng (bắt buộc)</label>
+                        <input id="sdtId" type="number">
+                        <b id="e-sdt"></b>
+                    </div>
+            
+                </div>
+                <div class="module">
+                    <h2 style="font-size: 18px;font-weight: bold;margin: 15px 0;">- Vui lòng chọn hình thức thanh toán</h2>
+				    <div id="zalopay" style="line-height: 22px;">
+                        <input checked name="payment-method" type="radio" value="zalopay">
+                        <span><img src="images/118775546_989693048121674_574858245112368183_n.png" alt="zalopay" style="width: 50px; height: 25px"></span>
+					    <label style="display: inline-block;line-height: 20px;">
+							Cổng thanh toán ZaloPay
+                        </label>
+                        <span><img src="images/images.png" alt="atm"></span>
+                        <span><img src="images/tải xuống.png" alt="visa"></span>
+                        <span><img src="images/images (1).png" alt="master"></span>
+					</div>
+
+					<div id="vnpay" style="line-height: 22px;">
+                        
+                        <input name="payment-method" type="radio">
+                        <span><img src="images/Logo-VNPAYQR-update.png" alt="zalopay" style="width: 50px; height: 25px"></span>
+						<label style="display: inline-block; line-height: 20px;">
+							Thanh toán qua VNPAY <a href="#" target="_blank">(Chi tiết)</a>
+                        </label>
+                        <span><img src="images/images.png" alt="atm"></span>
+					</div>
+					
+					<div id="momo" style="line-height: 22px;">
+
+                        <input name="payment-method" type="radio">
+                        <span><img src="images/images (3).png" alt="momo" style="width: 50px; height: 25px"></span>
+						<label style="display: inline-block;line-height: 20px;">
+							Thanh toán qua Ví MoMo 
+                        </label>
+                        <span><img src="images/tải xuống.png" alt="visa"></span>
+                        <span><img src="images/images (1).png" alt="master"></span>
+                        <span><img src="images/images.png" alt="atm"></span>
+					</div>
+					
+					<button class="button" style="width:100%">
+						<strong>THANH TOÁN ONLINE</strong>
+						<br>
+						(Qua MoMo, VNPay, ZaloPay)
+					</button>
+					
+					<div id="orther"><span>HOẶC</span></div>
+						<button class="button" style="width:100%; background: #277cea; border: solid 1px #1d72e0;">
+						    <strong>ĐẶT HÀNG THANH TOÁN SAU</strong>
+						    <br>
+						    (Trả tiền khi nhận hàng tại nhà)
+                        </button>   
+                        
+                        <div class="tu-van">
+
+                            <div id="orther"><span>HOẶC</span></div>
+                            
+                        
+                        <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                ĐẶT HÀNG NGAY
+                            </button>
+
+
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title" style="text-align: center;">Modal Heading</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p class="sp"></p>
+                                    <p class="ten"></p>
+                                    <p class="sdt"></p>
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                            </div>
+                        </div>
+
+
+
+
+				</div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="tong" style="border-bottom: 1px solid whitesmoke;">
+            <div class="all" style="background-color: #333333; border-bottom: 0">
+                <div class="col25" idx=1>
+                    <h3>
+                        THÔNG TIN LIÊN HỆ  
+                    </h3>
+                    <ul class="lien-he">
+                        <li><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</li>
+                        <li><i class="fas fa-phone"></i><a href="#">0382890580</a></li>
+                        <li><i class="fas fa-envelope-square"></i><a href="mailto:dangngochoainam0601@gmail.com">dangngoc</a></li>
+                        <li><i class="fab fa-facebook-square"></i><a href="#">dangngochoainam</a></li>
+                        <li><i class="fab fa-skype"></i><a href="#">dangngochoainamds</a></li>
+                    </ul>
+                    <div class="media">
+                        <a href="https://www.facebook.com/DangNgocHoaiNam01/"><img src="images/118491681_744234789468835_7394762651302894043_n.png" alt="fb"></a>
+                        <a href="#"><img src="images/118615476_1004514039980589_8967206455643092027_n.png" alt="intas"></a>
+                        <a href="#"><img src="images/118581067_591908108061418_7709479568019668839_n.png" alt="tiw"></a>
+                        <a href="#"><img src="images/117877423_1314534258883909_514585277045609791_n.png" alt="youtobe"></a>
+                    </div>
+                </div>
+                <div class="col25" idx=2>
+                    <h3>
+                        LIÊN KẾT
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=3>
+                    <h3>
+                        HỖ TRỢ 
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Tư vấn khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=4>
+                    <h3>
+                        TẢI ỨNG DỤNG TRÊN 
+                    </h3>
+                    <ul class="lien-he">
+                        <li>Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay. </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-googleplay.jpg" alt="google-play" ></a>
+                        </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-appstore.jpg" alt="appstore" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+            <div class="all bottom" style="border-bottom: 0">
+                <div class="col50">
+                    &copy; Bản quyền thuộc về . Thiết kế website icon NamVux              
+                </div>
+                <div class="hinh-thuc">
+                    <img src="images/img-payment.png" alt="thanh-toan" />            
+                </div>
+            </div>
+        
+   </footer>
+    
+</body>
+</html>

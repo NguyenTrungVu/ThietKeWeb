@@ -1,0 +1,36 @@
+.menu-icon{
+    padding-top:8px;
+}
+
+.menu-icon > a{
+    color:#fff !important;
+    font-size:20px;
+} 
+
+
+
+.secondmenu{
+    overflow: hidden !important;
+    padding: 5px !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175) !important;
+    background: #fff !important;
+    width: 80% !important;
+    margin:0 auto !important;
+    border-radius:10px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.secondmenu > li{
+    width:31%;
+    margin:5px !important;
+    color:#222 !important;
+}
+.secondmenu .menu-drop > a{
+    color:#222 !important;
+    border-radius:5px;
+    border:1px solid  #222;
+}
+.pos{
+    position: relative !important;
+    background-color: #fff;
+}

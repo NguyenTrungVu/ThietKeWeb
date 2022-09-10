@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cs/css_bao-hanh.css" rel="stylesheet">
+    <link href="cs/header.css" rel="stylesheet">
+    <link href="cs/menu-res.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/baoHanh.js"></script>
+    <script src="js/footer-res.js"></script>
+    <link href="images/1.png" rel="shorcut icon">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header class="tong" style="background-color:#ff0000;">
+        <div class="all flex" style="background-color:#ff0000; border-bottom: 0; align-items: center; ">
+            <div class="logo ">
+                <a href="bigExam.html"><img src="images/logo.png" alt="logo" width="37" height="32" ></a> 
+            </div>
+            <div class="ndsearch">
+                <form class="f-search">
+                    <div class="cb-area">
+                        <button type="button">Hồ Chí Minh</button>
+                        <div class="cb-areasub">
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hà Nội</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Hồ Chí Minh</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-map-marker"></i> Đà Nẵng</a>
+                        </div>
+                    </div>
+                    <div class="ex_search">
+                        <input type="text" class="ex_stext" placeholder="Bạn cần tìm gì ..." id="ex_stext">
+                        <button id="ex_sbm">
+                            <svg width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu"> 
+                <ul class="nd-menu media">
+                    <li  class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                            <div class="dropdown-content">
+                                <a href="#" >iPhone</a>
+                                <a href="#" >SamSung</a>
+                                <a href="#" >Huawei</a>
+                                <a href="#" >Readme</a>
+                                <a href="#" >Vsmart</a>
+                                <a href="#" >Vivo</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                            <div class="dropdown-content">
+                                <a href="#" >Huawei Tab</a>
+                                <a href="#" >SamSung Tab</a>
+                                <a href="#" >Ipad Air</a>
+                                <a href="#" >Ipad Pro</a>
+                                <a href="#" >Ipad Mini</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                            <div class="dropdown-content">
+                                <a href="#" >Tai nghe</a>
+                                <a href="#" >Cáp, sạc</a>
+                                <a href="#" >Pin dự phòng</a>
+                                <a href="#" >Dán màn hình</a>
+                                <a href="#" >Ốp lưng</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown">
+                        <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                            <div class="dropdown-content">
+                                <a href="#" >Ép kính</a>
+                                <a href="#" >Chân sạc</a>
+                                <a href="#" >Thay pin</a>
+                                <a href="#" >Thay màn hình</a>
+                                <a href="#" >Thay vỏ</a>
+                            
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+                    <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+                </ul>
+            </div>
+             <!--<div class="menu-icon">
+                <a><i class="fas fa-bars"></i></a>
+                <a><i class="fas fa-times"></i></a>
+            </div>-->
+
+        </div>
+        <!-- mày bỏ cái này vào phần  css header nhen
+
+            <ul class="nd-menu secondmenu">
+            <li  class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại 
+                    <div class="dropdown-content pos">
+                        <a href="#" >iPhone</a>
+                        <a href="#" >SamSung</a>
+                        <a href="#" >Huawei</a>
+                        <a href="#" >Readme</a>
+                        <a href="#" >Vsmart</a>
+                        <a href="#" >Vivo</a>
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tablet-alt"></i>Tablet
+                    <div class="dropdown-content pos">
+                        <a href="#" >Huawei Tab</a>
+                        <a href="#" >SamSung Tab</a>
+                        <a href="#" >Ipad Air</a>
+                        <a href="#" >Ipad Pro</a>
+                        <a href="#" >Ipad Mini</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-headphones-alt"></i>Phụ kiện
+                    <div class="dropdown-content pos">
+                        <a href="#" >Tai nghe</a>
+                        <a href="#" >Cáp, sạc</a>
+                        <a href="#" >Pin dự phòng</a>
+                        <a href="#" >Dán màn hình</a>
+                        <a href="#" >Ốp lưng</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown">
+                <a href="#"><i class="fas fa-tools"></i>Sửa chữa
+                    <div class="dropdown-content pos">
+                        <a href="#" >Ép kính</a>
+                        <a href="#" >Chân sạc</a>
+                        <a href="#" >Thay pin</a>
+                        <a href="#" >Thay màn hình</a>
+                        <a href="#" >Thay vỏ</a>
+                    
+                    </div>
+                </a>
+            </li>
+            <li class="menu-drop dropdown"><a href="#"><i class="fas fa-id-card-alt"></i>Liên hệ </a></li>
+            <li class="menu-drop dropdown"><a href="#"><i class="far fa-newspaper"></i>Tin tức</a></li>
+        </ul>-->
+
+
+        
+
+
+    </header>
+    
+
+
+
+
+    <section class="tong">
+        <div class="all">
+            <ul class="home flex">
+                <li>
+                    <a style="color: #e11b1e;" href="#" title="Go to Home Page">Home</a>
+                        <i class="fa fa-angle-right"></i>
+                    </li>
+                <li>
+                    Chính sách bảo hành</li>
+            </ul>
+            <div class="cskh">
+                <p>Chào mừng Quý khách !</p>
+                <p>Dưới đây là chi tiết thông tin bảo hành các sản phẩm, <a href="#" target="_blank">NAMVUX</a> luôn nỗ lực để Quý khách hài lòng và tin tưởng khi mua hàng.</p>
+                <p>Chân thành cảm ơn và mong được phục vụ Quý khách !</p>
+            </div>
+            <div class="title">
+                <h2>CHÍNH SÁCH BẢO HÀNH</h2>
+            </div>
+            <div class="csbh flex">
+                <div class="left">
+                    <div class="menu-items">
+                        <div class="main-btn">
+                          <button class="active" type="radio" name="shape" idx="1" checked >I. Đổi mới 30 ngày miễn phí</button>
+                        </div>
+                    </div>
+                    <div class="menu-items">
+                        <div class="main-btn">
+                          <button type="radio" name="shape" idx="2">II. Bảo hành tiêu chuẩn</button>
+                        </div>
+                        <div class="group-tab">
+                          <div>
+                            <button class="con" idx="1" checked >1. Điện thoại, Laptop</button>
+                          </div>
+                          <div>
+                            <button class="con" idx="2">2. Phụ kiện</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="menu-items">
+                        <div class="main-btn">
+                          <button type="radio" name="shape" idx="3">III. Bảo hành mở rộng</button>
+                        </div>
+                        <div class="group-tab">
+                            <div>
+                                <button class="con" idx="1">1. Gia hạn bảo hành S-24+</button>
+                            </div>
+                            <div>
+                                <button class="con" idx="2">2. Bảo hành 1 đổi 1</button>
+                            </div>
+                            <div>
+                                <button class="con" idx="3">3. Bảo hành Rơi vỡ, rơi nước</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="dm30day" class="content-items">
+                        <p>Khi mua sản phẩm tại NAMVUX, khách hàng có quyền yên tâm với chính sách đổi mới miễn phí lên tới 30 ngày.</p>
+                        <table class="content">
+                            <tbody>
+                                <tr style="width: 100%;">
+                                    <th class="col10">Loại sản phẩm</th>
+                                    <th class="col10">Đổi mới miễn phí (*)</th>
+                                    <th class="col80">Quy định nhập lại, trả lại</th>
+                                </tr>
+                                <tr>
+                                    <td>Điện thoại/ Máy tính bảng/ Macbook/ Apple watch</td>
+                                    <td>30 ngày</td>
+                                    <td>- Trong 30 ngày đầu nhập lại máy, trừ phí 20% trên giá hiện tại (hoặc giá mua nếu giá mua thấp hơn giá hiện tại)<br> - Sau 30 ngày nhập lại máy theo giá thoả thuận</td>
+                                </tr>
+                                <tr>
+                                    <td>Samsung Watch</td>
+                                    <td>30 ngày</td>
+                                    <td>- Trong 30 ngày đầu nhập lại máy, trừ phí 30% trên giá hiện tại (hoặc giá mua nếu giá mua thấp hơn giá hiện tại)<br> - Sau 30 ngày nhập lại máy theo giá thoả thuận</td>
+                                </tr>
+                                <tr>
+                                    <td>Laptop</td>
+                                    <td>30 ngày</td>
+                                    <td>- Trong 30 ngày đầu nhập lại máy, trừ phí 20% trên giá hiện tại (hoặc giá mua nếu giá mua thấp hơn giá hiện tại)<br> - Không áp dụng nhập lại sau 30 ngày</td>
+                                </tr>
+                                <tr>
+                                    <td>Phụ kiện &lt; 1 triệu</td>
+                                    <td>1 năm ( Sản phẩm mua mới ) <br>1 tháng ( Sản phẩm mua cũ )</td>
+                                    <td>Không áp dụng nhập lại</td>
+                                </tr>
+                                <tr>
+                                    <td>Phụ kiện &gt; 1 triệu</td>
+                                    <td>15 ngày</td>
+                                    <td>Không áp dụng nhập lại <br> Airpod : <br> - Trong 15 ngày đầu nhập lại máy, trừ phí 20% trên giá hiện tại (hoặc giá mua nếu giá mua thấp hơn giá hiện tại)<br> - Sau 15 ngày nhập lại máy theo giá thoả thuận</td>
+                                </tr>
+                                <tr>
+                                    <td>Bảo hành mở rộng</td>
+                                    <td>15 ngày</td>
+                                    <td>Trong 7 ngày đầu, máy không lỗi, khách hàng trả lại gói BHMR<br> &gt; Nhập lại trừ phí 50% gói BHMR</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>(*):&nbsp;Lỗi phần cứng từ phía nhà sản xuất</p>
+                        <p><em><span class="gach-duoi"><strong>Điều kiện đổi trả:</strong></span></em></p>
+                        <ul style="padding-left: 15px">
+                            <li>Máy:&nbsp;Như mới, không xước xát, không dán decal, hình trang trí</li>
+                            <li>Máy cũ:&nbsp;có tình trạng sản phẩm như lúc mới mua</li>
+                            <li>Hộp:&nbsp;Như mới, không móp méo, rách, vỡ, bị viết, vẽ, quấn băng dính, keo; có Serial/IMEI trên hộp trùng với thân máy.</li>
+                            <li>Phụ kiện và quà tặng:&nbsp;Còn đầy đủ, nguyên vẹn, không móp méo xước xát hoặc bị hư hại trong quá trình sử dụng.</li>
+                            <li>Tài khoản:&nbsp;Máy đã đã được đăng xuất khỏi tất cả các tài khoản như: iCloud, Google Account, Mi Account…</li>
+                            <li>(*) Lỗi từ phía Nhà sản xuất là các lỗi bao gồm: Lỗi nguồn, lỗi trên mainboard, ổ cứng, màn hình và các linh kiện phần cứng bên trong</li>
+                            <li>Ví dụ: Sọc màn hình, tràn màu, loa rè, màn hình có từ 3 điểm chết trở lên hoặc 1 điểm chết có kích thước lớn hơn 1mm</li>
+                        </ul>
+                        <div class="content-sao-luu-du-lieu">
+                            <p style="margin: 15px 0 5px 0;"><strong><em><span class="gach-duoi">Lưu ý về dữ liệu trên các thiết bị:</span></em></strong></p>
+                            <p style="margin: 5px 0 5px 0;">Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu. (<a href="#">Hướng dẫn chi tiết với Android</a> | <a href="#">Hướng dẫn chi tiết với iOS</a>)</p>
+                            <p>Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng hết sức để <strong>hỗ trợ - hướng dẫn</strong> khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa hàng <strong>không chịu trách nhiệm về việc mất bất cứ dữ liệu</strong> trong mọi trường hợp.&nbsp;<a href="#">Xem thêm.</a></p>
+                        </div>
+                    </div>
+                    <div id="bh-tc" class="content-items">
+                        <div class="bh">
+                            <p>Các sản phẩm chính hãng, Quý khách có thể tới các TTBH chính hãng hoặc trực tiếp tới các cửa hàng NAMVUX để được tiếp nhận gửi máy bảo hành chính hãng.</p>
+                            <p>Yêu cầu tiếp nhận bảo hành tùy theo quy định của từng hãng, chi tiết có trong bảng sau:</p>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th class="col25">
+                                            <h3>Sản phẩm</h3>
+                                        </th>
+                                        <td class="col25">
+                                            <h3>Thời gian bảo hành</h3>
+                                        </td>
+                                        <td class="col25">
+                                            <h3>Quyền lợi bảo hành</h3>
+                                        </td>
+                                        <td class="col25">
+                                            <h3>Địa chỉ bảo hành</h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Máy mới</span></td>
+                                        <td>
+                                        <p><span>12 tháng</span><br><span>(hoặc dài hơn theo quy định của hãng)</span></p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;"><span>Quyền lợi bảo hành của hãng</span></p>
+                                        </td>
+                                        <td><span>TTBH chính hãng</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Máy đã kích hoạt bảo hành chính hãng</span></td>
+                                        <td>
+                                        <p style="text-align: center;"><span>12 tháng = Thời gian bảo hành còn lại tại hãng + Bảo hành tại NAMVUX</span></p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;"><span>- Theo quyền lợi bảo hành của hãng trong thời gian được hãng bảo hành</span></p>
+                                        <p style="text-align: center;"><span></span>- Sửa chữa, thay thế linh kiện trong thời gian bảo hành còn lại tại NAMVUX</p>
+                                        </td>
+                                        <td><span>TTBH chính hãng &amp; </span><br><span>NAMVUX</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Máy cũ</span></td>
+                                        <td><span><span>6 tháng</span></span></td>
+                                        <td><span>Sửa chữa, thay thế linh kiện</span></td>
+                                        <td>NAMVUX</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul style="padding-left: 15px;">
+                                <li>Trong thời gian đợi bảo hành - sửa chữa, khách hàng sẽ được hỗ trợ miễn phí một điện thoại khác để sử dụng.</li>
+                                <li>Khách hàng trả lại máy đã mượn sau khi nhận lại máy của mình.</li>
+                            </ul>
+                            <p><strong>* Quy định bảo hành phụ kiện theo kèm máy:</strong></p>
+                            <ul style="padding-left: 15px">
+                                <li><strong>Vsmart</strong>: 6 tháng</li>
+                                <li><strong>Asus</strong>: 6 tháng</li>
+                                <li><strong>Nokia</strong>: 6 tháng</li>
+                            </ul>
+                            <p><em>Quyền lợi bảo hành (lỗi từ phía nhà sx): 1 đổi tất cả các lỗi</em></p>
+                            <p><strong><em>Địa chỉ BH: TTBH chính hãng. <a href="#" style="color: #d70018;"><span class="gach-duoi">Click vào để tìm địa chỉ</span></a>!</em></strong></p>
+                            <div class="content-sao-luu-du-lieu">
+                                <p><strong><em><span class="gach-duoi">Lưu ý về dữ liệu trên các thiết bị:</span></em></strong></p>
+                                <p>Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu. (<a href="#">Hướng dẫn chi tiết với Android</a> | <a href="#">Hướng dẫn chi tiết với iOS</a>)</p>
+                                <p>Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng hết sức để <strong>hỗ trợ - hướng dẫn</strong> khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa hàng <strong>không chịu trách nhiệm về việc mất bất cứ dữ liệu</strong> trong mọi trường hợp.&nbsp;<a href="#">Xem thêm.</a></p>
+                            </div>
+                        </div>
+                        <div class="bh">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th class="col20"><em>Sản phẩm</em></th>
+                                        <th class="col20"><em>Tình trạng</em></th>
+                                        <th class="col20"><em>Thời gian</em></th>
+                                        <th class="col30"><em>Quyền lợi bảo hành</em><br><em>(lỗi từ phía nhà sản xuất)</em></th>
+                                        <th class="col10"><em>Địa điểm</em></th>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <div>Phụ kiện</div>
+                                        </td>
+                                        <td>Mới</td>
+                                        <td>12 tháng</td>
+                                        <td rowspan="2">1 đổi 1 tất cả các lỗi</td>
+                                        <td rowspan="9">
+                                        <div>NAMVUX</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cũ</td>
+                                        <td>30 ngày</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"><strong>Phụ kiện khác</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1" colspan="2">Dán màn hình</td>
+                                        <td>30 ngày</td>
+                                        <td rowspan="2">
+                                        <p>-&nbsp;1 đổi 1 tất cả các lỗi<br>- Dán mới lần 2 được giảm 30%.<br>- <em><strong>Dán PPF chỉ được thực hiện ở cửa hàng.</strong></em><br><em><strong>(Không áp dụng bảo hành cho đơn hàng giao tại nhà)</strong></em></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Dán cường lực</td>
+                                        <td>30 ngày</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Quà tặng (của hãng)</td>
+                                        <td>30 ngày</td>
+                                        <td rowspan="3">1 đổi 1 tất cả các lỗi</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Thẻ nhớ, USB</td>
+                                        <td>24 tháng</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Phụ kiện đi kèm theo Phụ kiện</td>
+                                        <td>3 tháng</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Tai nghe, Loa, Đồ chơi công nghệ (&gt;1.000.000)</td>
+                                        <td>12 tháng</td>
+                                        <td>Sửa chữa, thay thế linh kiện</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Bao da, ốp lưng</td>
+                                        <td colspan="3">Không bảo hành</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5"style="text-align: left;"><strong>Đặc biệt:</strong><br>
+                                            <ul style="padding-left: 15px;">
+                                                <li><span>Phụ kiện Anker - Pisen: 18 tháng</span></li>
+                                                <li><span></span>Phụ kiện Aukey - Energizer - Totolink - Tp-Link: 24 tháng</li>
+                                                <li>Sạc cáp Aukey: Đứt gãy do hao mòn, hư hỏng từ phía sản phẩm trong quá trình sử dụng vẫn được bảo hành</li>
+                                            </ul> 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="content-sao-luu-du-lieu">
+                                <p><strong><em><span class="gach-duoi">Lưu ý về dữ liệu trên các thiết bị:</span></em></strong></p>
+                                <p>Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu. (<a href="#">Hướng dẫn chi tiết với Android</a> | <a href="#">Hướng dẫn chi tiết với iOS</a>)</p>
+                                <p>Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng hết sức để <strong>hỗ trợ - hướng dẫn</strong> khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa hàng <strong>không chịu trách nhiệm về việc mất bất cứ dữ liệu</strong> trong mọi trường hợp.&nbsp;<a href="#">Xem thêm.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bh-mr" class="content-items">
+                        <div class="bh">
+                            <p><span class="gach-duoi"><strong>SẢN PHẨM ÁP DỤNG:</strong></span><strong>&nbsp;<span>Điện thoại, Laptop, Phụ kiện cao cấp</span></strong></p>
+                            <p><span class="gach-duoi"><strong>THỜI GIAN BẢO</strong><strong> HÀNH:</strong></span>&nbsp; 12 - 24 tháng</p>
+                            <p><strong><span class="gach-duoi">NỘI DUNG GÓI BẢO HÀNH:</span></strong></p>
+                            <ul style="padding-left: 15px;">
+                                <li><em><strong>S-24+</strong></em>&nbsp;<span>là dịch vụ bảo hành mở rộng dành cho điện thoại máy tính bảng chính hãng.</span></li>
+                                <li><span><span>Tham gia S24+, khách hàng được kéo dài thêm thời gian bảo hành cho điện thoại/máy tính bảng hàng của mình từ 12 - 24 tháng</span></span></li>
+                                <li><span> Khi hết thời gian bảo hành từ hãng, máy vẫn bảo hành các lỗi phát sinh từ phía nhà sản xuất trong 12 tháng/ 24 tháng tiếp theo</span></li>
+                                <li>Các trường hợp loại trừ không thuộc phạm vi bảo hành của S24+</li>
+                            </ul>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th width="100%">
+                                            Điều khoản loại trừ
+                                        </th>
+                                        <th> 
+                                            Bảo hành
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Phụ kiện kèm theo của sản phẩm</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Can thiệp phần cứng mà không có chỉ định từ NSX hoặc NAMVUX</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Các vấn đề liên quan đến phần mềm</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Pin không nằm trong phạm vi bảo hành của gia hạn bảo hành</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Các vấn đề liên quan đến trộm, cướp, sử dụng cẩu thả</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6. Sử dụng phụ kiện, dòng điện không phù hợp dẫn đến cháy nổ</td>
+                                        <td>x</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul style="padding-left: 15px">
+                                <li>Tiếp nhận bảo hành:&nbsp;<span>Tất cả các cửa hàng NAMVUX hoặc TTBH uỷ quyền NAMVUX</span></li>
+                                <li>Thời gian xử lý:&nbsp;từ 14 ngày - 30 ngày.&nbsp;</li>
+                                <li>Nếu thời gian xử lý nhanh hơn NAMVUX sẽ liên hệ để trả máy sớm cho khách hàng</li>
+                            </ul>
+                            <div class="content-sao-luu-du-lieu">
+                                <p><strong><em><span class="gach-duoi">Lưu ý về dữ liệu trên các thiết bị:</span></em></strong></p>
+                                <p>Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu. (<a href="#">Hướng dẫn chi tiết với Android</a> | <a href="#">Hướng dẫn chi tiết với iOS</a>)</p>
+                                <p>Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng hết sức để <strong>hỗ trợ - hướng dẫn</strong> khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa hàng <strong>không chịu trách nhiệm về việc mất bất cứ dữ liệu</strong> trong mọi trường hợp.&nbsp;<a href="#">Xem thêm.</a></p>
+                            </div>
+                        </div>
+                        <div class="bh">
+                            <p><span class="gach-duoi"><strong>SẢN PHẨM ÁP DỤNG:</strong></span>&nbsp;<span>Điện thoại, Máy tính bảng mới/ cũ; Tai nghe/ Đồng Hồ Samsung, Apple</span><span><br></span></p>
+                            <p><span class="gach-duoi"><strong>THỜI HẠN BẢO HÀNH:</strong></span> 6 tháng/12 tháng</p>
+                            <h3><span class="gach-duoi"><strong>QUYỀN LỢI BẢO HÀNH 1 ĐỔI 1 VIP</strong></span></h3>
+                            <p><span class="gach-duoi"><strong></strong></span>1. Đổi máy sau khi máy được kiểm tra và xác định đúng máy bị lỗi phần cứng do nhà sản xuất</p>
+                            <p>2. Máy đổi bảo hành là máy tương đương với máy khách hàng mua ban đầu tại NAMVUX.&nbsp;</p>
+                            <p>3. Nếu máy được đổi có lỗi tiếp, máy vẫn sẽ được bảo hành 1 đôi 1 trong thời gian bảo hành còn lại</p>
+                            <p>4. Với các trường hợp không có máy để đổi ngay thì NAMVUX cam kết:</p>
+                            <p>- Thời gian chờ xử lý đổi máy tối đa 7 ngày làm việc (trừ thứ bảy + chủ nhật)</p>
+                            <p>- Sau 7 ngày, nếu không có máy đổi cho khách hàng NAMVUX sẽ xử lý:</p>
+                            <ul>
+                            <li>Đổi cho khách hàng một sản phẩm tương đương với giá trị hiện tại của sản phẩm</li>
+                            <li>Hoàn trả tiền lại cho khách hàng theo công thức sau:</li>
+                            </ul>
+                            <p><br><em><strong>Giá nhập lại = Giá máy tại thời điểm mua x (100% - 3%xSố tháng sử dụng)</strong></em></p>
+                            <p>(Số tháng sử dụng = Tháng tại thời điểm đổi máy – Tháng tại thời điểm mua máy)<br><br><span class="gach-duoi"><strong>Lưu ý:</strong></span></p>
+                            <ul>
+                            <li><span>Các trường hợp máy bị cấn móp, rơi vỡ, khi nhập lại máy NAMVUX sẽ trừ phí khách hàng theo quy định nhập máy</span></li>
+                            <li><span>Chỉ áp dụng máy đổi máy, tất cả các phụ kiện kèm theo như: tai nghe, cáp, sạc... không đổi kèm</span></li>
+                            <li>Trường hợp khách hàng được đổi máy nhưng muốn đổi sang dòng máy khác có giá trị cao hơn hoặc muốn hoàn lại tiền mặt.</li>
+                            </ul>
+                            <p><br><em><strong>NAMVUX hỗ trợ nhập lại máy như sau:</strong></em></p>
+                            <ul>
+                            <li>Giá nhập lại = Giá trị máy hiện tại x 90%</li>
+                            </ul>
+                            <div class="content-sao-luu-du-lieu">
+                                <p><strong><em><span class="gach-duoi">Lưu ý về dữ liệu trên các thiết bị:</span></em></strong></p>
+                                <p>Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu. (<a href="#">Hướng dẫn chi tiết với Android</a> | <a href="#">Hướng dẫn chi tiết với iOS</a>)</p>
+                                <p>Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng hết sức để <strong>hỗ trợ - hướng dẫn</strong> khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa hàng <strong>không chịu trách nhiệm về việc mất bất cứ dữ liệu</strong> trong mọi trường hợp.&nbsp;<a href="#">Xem thêm.</a></p>
+                            </div>    
+                        </div>
+                        <div class="bh">
+                            <p><span class="gach-duoi"><strong style="text-decoration-line: underline;">SẢN PHẨM ÁP DỤNG:</strong></span>&nbsp;Điện thoại/ Máy tính bảng Mới, Cũ</p>
+                            <p><span class="gach-duoi"><strong>THỜI HẠN BẢO HÀNH:</strong></span> 12 tháng</p>
+                            <h3><strong>QUYỀN LỢI BẢO HÀNH RƠI VỠ - RƠI NƯỚC</strong></h3>
+                            <p>1. Bao gồm các quyền lợi của gói BẢO HÀNH 1 ĐỔI 1 VIP&nbsp;</p>
+                            <p>2. Với các tai nạn rơi vỡ, rơi nước …NAMVUX tiến hành sửa chữa/ thay thế linh kiện/ bồi thường cho khách hàng.&nbsp;</p>
+                            <p>3. Với mỗi tai nạn, khách hàng chịu phí miễn thường là 10% chi phí sửa chữa/ thay thế linh kiện/ bồi thường</p>
+                            <p>4. Giá trị hợp đồng bảo hành rơi vỡ, rơi nước bằng tối đa giá trị của máy</p>
+                            <ul style="padding-left: 15px">
+                                <li>Tổng chi phí cho các lần sửa chữa/ thay thế linh kiện không được vượt quá giá trị của hợp đồng bảo hành rơi vỡ - rơi nước</li>
+                            </ul>
+                            <p>5. Trường hợp máy không thể sửa chữa được</p>
+                            <ul style="padding-left: 15px">
+                                <li>Khách hàng được đổi 1 máy cũ tương đương máy gặp tai nạn</li>
+                                <li>Khách hàng chịu phí miễn thường là 10% giá trị của máy được đổi.</li>
+                                <li>Hợp đồng bảo hành rơi vỡ - rơi nước của máy hết hiệu lực.</li>
+                            </ul>
+                            <p>6. Chỉ áp dụng bảo hành máy, tất cả các phụ kiện kèm theo như: tai nghe, pin, cáp, adapter sạc... không thuộc quyền lợi gói bảo hành</p>
+                            <p><span><span class="gach-duoi"><strong>TIẾP NHẬN BẢO HÀNH</strong></span>:&nbsp;<span>Tất cả các cửa hàng NAMVUX hoặc TTBH uỷ quyền Điện Thoại Vui</span></span></p>
+                            
+                            <div class="content-sao-luu-du-lieu">
+                                <p><strong><em><span class="gach-duoi">Lưu ý về dữ liệu trên các thiết bị:</span></em></strong></p>
+                                <p>Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu. (<a href="#">Hướng dẫn chi tiết với Android</a> | <a href="#">Hướng dẫn chi tiết với iOS</a>)</p>
+                                <p>Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng hết sức để <strong>hỗ trợ - hướng dẫn</strong> khách hàng trong việc sao lưu dữ liệu. Tuy nhiên, cửa hàng <strong>không chịu trách nhiệm về việc mất bất cứ dữ liệu</strong> trong mọi trường hợp.&nbsp;<a href="#">Xem thêm.</a></p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="tong" style="border-bottom: 1px solid whitesmoke;">
+            <div class="all flex" style="background-color: #333333; border-bottom: 0">
+                <div class="col25" idx=1>
+                    <h3>
+                        THÔNG TIN LIÊN HỆ  
+                    </h3>
+                    <ul class="lien-he">
+                        <li><i class="fas fa-map-marker-alt"></i>371 Nguyễn Kiệm, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</li>
+                        <li><i class="fas fa-phone"></i><a href="#">0382890580</a></li>
+                        <li><i class="fas fa-envelope-square"></i><a href="mailto:dangngochoainam0601@gmail.com">dangngoc</a></li>
+                        <li><i class="fab fa-facebook-square"></i><a href="#">dangngochoainam</a></li>
+                        <li><i class="fab fa-skype"></i><a href="#">dangngochoainamds</a></li>
+                    </ul>
+                    <div class="media">
+                        <a href="https://www.facebook.com/DangNgocHoaiNam01/"><img src="images/118491681_744234789468835_7394762651302894043_n.png" alt="fb"></a>
+                        <a href="#"><img src="images/118615476_1004514039980589_8967206455643092027_n.png" alt="intas"></a>
+                        <a href="#"><img src="images/118581067_591908108061418_7709479568019668839_n.png" alt="tiw"></a>
+                        <a href="#"><img src="images/117877423_1314534258883909_514585277045609791_n.png" alt="youtobe"></a>
+                    </div>
+                </div>
+                <div class="col25" idx=2>
+                    <h3>
+                        LIÊN KẾT
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Điện thoại</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=3>
+                    <h3>
+                        HỖ TRỢ 
+                    </h3>
+                    <ul class="lien-he">
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Tư vấn khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col25" idx=4>
+                    <h3>
+                        TẢI ỨNG DỤNG TRÊN 
+                    </h3>
+                    <ul class="lien-he">
+                        <li>Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay. </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-googleplay.jpg" alt="google-play" ></a>
+                        </li>
+                        <li class="x">
+                            <a href="#"><img src="images/img-appstore.jpg" alt="appstore" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+            <div class="all flex bottom" style="border-bottom: 0">
+                <div class="col50">
+                    &copy; Bản quyền thuộc về . Thiết kế website icon NamVux              
+                </div>
+                <div class="hinh-thuc">
+                    <img src="images/img-payment.png" alt="thanh-toan" />            
+                </div>
+            </div>
+        
+   </footer>
+</body>
+</html>
